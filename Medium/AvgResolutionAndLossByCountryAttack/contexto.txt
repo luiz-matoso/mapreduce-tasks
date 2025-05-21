@@ -1,0 +1,13 @@
+A task agrupa os incidentes de segurança cibernética por país e por tipo de ataque, e para cada combinação, ela calculou três coisas:
+
+1. Tempo médio de resolução dos incidentes (Avg Resolution Time)
+→ Soma o tempo de resolução de todos os incidentes desse grupo (país + tipo de ataque) e divide pela quantidade de incidentes desse grupo.
+
+2. Perda financeira total (Total Loss)
+→ Soma todos os valores de perda financeira dos incidentes desse grupo.
+
+3. Quantidade total de incidentes (Total Incidents)
+→ Conta quantos incidentes existem para aquele país e aquele tipo de ataque.
+
+4. Resultado:
+País - Tipo de Ataque    Avg Resolution Time: X horas, Total Loss: $X milhões, Total Incidents: X
