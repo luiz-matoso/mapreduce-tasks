@@ -24,7 +24,7 @@ public class CountryCount {
         String[] files = new GenericOptionsParser(conf, args).getRemainingArgs();
 
         Path input = new Path("in/cybersecurity.csv");
-        Path output = new Path("output/country_count");
+        Path output = new Path("output/CountryCount");
 
         Job job = Job.getInstance(conf, "country count");
         job.setJarByClass(CountryCount.class);

@@ -1,6 +1,5 @@
 package basic;
 
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -16,22 +15,21 @@ import org.apache.log4j.BasicConfigurator;
 
 import java.io.IOException;
 
-public class BrazilOccurrence {
+public class AttackTypeQuantity {
 
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
-
         BasicConfigurator.configure();
 
         Configuration c = new Configuration();
         String[] files = new GenericOptionsParser(c, args).getRemainingArgs();
 
         Path input = new Path("in/cybersecurity.csv");
-        Path output = new Path("output/brazil_occurrence");
+        Path output = new Path("output/AttackTypeQuantity");
 
-        Job j = new Job(c, "brazil_occurrence");
+        Job j = new Job(c, "attack_quantity_by_target_industry");
 
-        j.setMapperClass(MapForBrazilOccurrence.class);
-        j.setReducerClass(ReduceForBrazilOccurrence.class);
+        j.setMapperClass(AttackTypeQuantity.MapForAttackTypeQuantity.class);
+        j.setReducerClass(AttackTypeQuantity.ReduceForAttackTypeQuantity.class);
 
         j.setMapOutputKeyClass(Text.class);
         j.setMapOutputValueClass(IntWritable.class);
@@ -43,25 +41,31 @@ public class BrazilOccurrence {
         FileOutputFormat.setOutputPath(j, output);
 
         System.exit(j.waitForCompletion(true) ? 0 : 1);
-
     }
 
-    public static class MapForBrazilOccurrence extends Mapper<LongWritable, Text, Text, IntWritable> {
+
+    public static class MapForAttackTypeQuantity extends Mapper<LongWritable, Text, Text, IntWritable> {
 
         public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+
             String[] tokens = value.toString().split(",");
 
-            for (String token : tokens) {
-                if (token.equals("Brazil")) {
-                    context.write(new Text(token), new IntWritable(1));
-                }
+            if (tokens.length > 2) {
+                String attackType = tokens[2].trim();
+                context.write(new Text(attackType), new IntWritable(1));
             }
+
         }
 
     }
 
-    public static class ReduceForBrazilOccurrence extends Reducer<Text, IntWritable, Text, IntWritable> {
+    public static class ReduceForAttackTypeQuantity extends Reducer<Text, IntWritable, Text, IntWritable> {
         public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
+
+            if (key.toString().equals("Attack Type")) {
+                return;
+            }
+
             int sum = 0;
             for (IntWritable val : values) {
                 sum += val.get();

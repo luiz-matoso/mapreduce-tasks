@@ -24,7 +24,7 @@ public class AffectedUsersPerYear {
         String[] files = new GenericOptionsParser(c, args).getRemainingArgs();
 
         Path input = new Path("in/cybersecurity.csv");
-        Path output = new Path("output/affected_users_per_year");
+        Path output = new Path("output/AffectedUsersPerYear");
 
         Job j = new Job(c, "maxusersaffected");
         j.setJarByClass(AffectedUsersPerYear.class);

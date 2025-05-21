@@ -1,0 +1,5 @@
+Banking	Avg Users: 505839.09, Avg Loss: 51.17M
+Education	Avg Users: 513137.78, Avg Loss: 47.90M
+Government	Avg Users: 499352.41, Avg Loss: 52.62M
+Healthcare	Avg Users: 504130.34, Avg Loss: 49.05M
+IT	Avg Users: 523210.94, Avg Loss: 51.90M

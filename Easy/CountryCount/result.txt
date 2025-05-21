@@ -1,0 +1,5 @@
+Australia	297
+Brazil	310
+China	281
+France	305
+Germany	291
