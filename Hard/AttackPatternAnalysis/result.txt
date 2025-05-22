@@ -1,0 +1,6 @@
+2015	
+1. Malware with Zero-day (Avg Resolution: 34.56 hours)
+2. DDoS with Zero-day (Avg Resolution: 26.35 hours)
+3. Phishing with Zero-day (Avg Resolution: 44.33 hours)
+2016	
+1. Phishing with Zero-day (Avg Resolution: 35.16 hours)
