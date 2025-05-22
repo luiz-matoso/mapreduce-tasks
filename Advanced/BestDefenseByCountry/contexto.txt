@@ -1,0 +1,5 @@
+Objective:
+- Calculate the most effective defense mechanism per country based on average resolution time
+
+1. Job 1: Calculate average resolution time by (Country, Defense Mechanism)
+2. Job 2: Find the best defense mechanism (lowest avg resolution time) for each country
