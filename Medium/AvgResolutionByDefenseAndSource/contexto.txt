@@ -1,0 +1,10 @@
+A task agrupa os incidentes de segurança cibernética por mecanismo de defesa utilizado e por fonte do ataque, e para cada combinação, ela calculou:
+
+Tempo médio de resolução dos incidentes (Avg Resolution Time)
+→ Soma o tempo de resolução de todos os incidentes desse grupo (defesa + fonte de ataque) e divide pela quantidade de incidentes desse grupo.
+
+Quantidade total de incidentes (Total Incidents)
+→ Conta quantos incidentes existem para aquela combinação de defesa e fonte de ataque.
+
+Resultado:
+Mecanismo de Defesa - Fonte do Ataque → Avg Resolution Time: X horas, Total Incidents: X

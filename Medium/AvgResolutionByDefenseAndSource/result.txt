@@ -1,0 +1,20 @@
+AI-based Detection - Hacker Group	Avg Time: 36,24 h | Incidents: 136
+AI-based Detection - Insider	Avg Time: 37,69 h | Incidents: 161
+AI-based Detection - Nation-state	Avg Time: 35,57 h | Incidents: 148
+AI-based Detection - Unknown	Avg Time: 36,84 h | Incidents: 138
+Antivirus - Hacker Group	Avg Time: 37,33 h | Incidents: 138
+Antivirus - Insider	Avg Time: 36,38 h | Incidents: 136
+Antivirus - Nation-state	Avg Time: 35,84 h | Incidents: 188
+Antivirus - Unknown	Avg Time: 36,93 h | Incidents: 166
+Encryption - Hacker Group	Avg Time: 37,05 h | Incidents: 141
+Encryption - Insider	Avg Time: 36,60 h | Incidents: 134
+Encryption - Nation-state	Avg Time: 35,69 h | Incidents: 157
+Encryption - Unknown	Avg Time: 37,06 h | Incidents: 160
+Firewall - Hacker Group	Avg Time: 37,31 h | Incidents: 127
+Firewall - Insider	Avg Time: 36,92 h | Incidents: 153
+Firewall - Nation-state	Avg Time: 35,19 h | Incidents: 148
+Firewall - Unknown	Avg Time: 33,75 h | Incidents: 157
+VPN - Hacker Group	Avg Time: 38,10 h | Incidents: 144
+VPN - Insider	Avg Time: 34,33 h | Incidents: 168
+VPN - Nation-state	Avg Time: 39,42 h | Incidents: 153
+VPN - Unknown	Avg Time: 35,89 h | Incidents: 147
