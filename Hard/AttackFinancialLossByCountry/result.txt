@@ -1,0 +1,5 @@
+DDoS	Top Country: UK (Avg Loss: $57,15M)
+Malware	Top Country: Germany (Avg Loss: $60,58M)
+Man-in-the-Middle	Top Country: Germany (Avg Loss: $60,94M)
+Phishing	Top Country: Australia (Avg Loss: $57,10M)
+Ransomware	Top Country: France (Avg Loss: $52,10M)
